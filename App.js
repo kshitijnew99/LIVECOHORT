@@ -1,11 +1,25 @@
-const prompt = require('prompt-sync')()
-
-let num = prompt("Enter the number of lines : ")
-
-for(let i = num ; i >0 ; i--){
-    for(let j = 1 ; j <=i ; j++){
-        process.stdout.write("* ")
+function abcd(cb){
+    let executed = false
+    let time = 0
+    return function(){
+        if(!executed){
+            cb();
+            executed = true;
+        }else{
+            time++;
+            console.log(`Already executed ${time} times`);
+            
+        }
     }
-    console.log();
-    
 }
+
+let newfnc = abcd(function(){
+    console.log("some function that is needs to be executed");
+    
+})
+
+newfnc();
+newfnc();
+newfnc();
+newfnc();
+newfnc();
