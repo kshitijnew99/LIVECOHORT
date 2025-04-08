@@ -3,7 +3,7 @@ let btn = document.querySelector("button")
 var arr = ['img1.png','img2.png']
 
 btn.addEventListener('click',function(){
-    let num = Math.floor(Math.random()*arr.length)
+    let num = Math.floor(Math.random()*arr.length)  
     var img = document.createElement('img')
     img.setAttribute('src',arr[num])
 
