@@ -1,11 +1,18 @@
-let arr = [10 ,20,30,40,50,60,70]
-let i=0,j=arr.length-1
-while(i<=j){
-    let temp;
-    temp = arr[i];
-    arr[i] = arr[j]
-    arr[j] = temp ;
-    j--;
+let arr = [1,1,0,1,0,1,1,0,0]
+
+
+let n = arr.length;
+let i = 0, j = 0;
+while(i<arr.length){
+    if(arr[i]==0){
+        let temp = arr[i]
+        arr[i] = arr[j]
+        arr[j] = temp
+        j++;
+        // i++;
+    }
     i++;
 }
 console.log(arr);
+
+
