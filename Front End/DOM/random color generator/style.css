@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#card{
+    height: 300px;
+    width: 300px;
+    background: salmon;
+    border-radius: 50%;
+    border: solid 4px white;
+}
+button{
+    padding: 10px 20px;
+    border: solid 6px rgb(251, 158, 108);
+    font-weight: 600;
+
+}
