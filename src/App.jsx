@@ -1,32 +1,24 @@
+import { useState } from "react"
+
 const App = () => {
 
-  let click = () => {
-    alert('click toh kar diya')
+
+  const [name,setname] = useState("kshitij");
+
+
+  const changeName = () => {
+    setname("piyush");
   }
-
-  const people = [
-      { name: "Alice", age: 25 },
-      { name: "Bob", age: 30 },
-      { name: "Charlie", age: 22 }
-  ];
-
-  const updatefPeo = people.map(function(peo,idx){
-    return <li key={idx}>
-      <span>Name : {peo.name}</span> |
-      <small> Age : {peo.age}</small>
-    </li>
-  })
+  console.log(name);
   
-  // console.log(updatefPeo); 
   
-
-
   return (<>
-            <h1>JSON data rendering</h1>
-            <ol>
-              {updatefPeo}
-            </ol>
+            <h1>UserName</h1>
+            <h3>{name}</h3>
+            
+            
 
+            <button onClick={changeName}>Change</button>
          </>)
 } 
 export default App
