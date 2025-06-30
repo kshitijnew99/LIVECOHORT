@@ -14,27 +14,13 @@ html, body {
   background-color: wheat;
   display: grid;
   gap: 6px;
-  grid-template-areas: 
-    "a" 
-    "b" 
-    "c" 
-    "d" 
-    "e" 
-    "f" 
-    "g" 
-    "h" 
-    "i" 
-     "j";
+  grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h" "i" "j";
   border-radius: 25px;
 }
 
 @media (min-width: 1080px) {
   .image {
-    grid-template-areas: 
-        "a a b c" 
-        "a a d e"
-        "f g j j" 
-        "h i j j";
+    grid-template-areas: "a a b c" "a a d e" "f g j j" "h i j j";
     border-radius: 30px;
     gap: 10px;
   }
